@@ -1,4 +1,4 @@
-function Header() {
+function Projects() {
   return (
     <header>
       <p>My website</p>
@@ -6,4 +6,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Projects;
