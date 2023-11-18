@@ -1,0 +1,1 @@
+body{font-family:Inter,system-ui,Avenir,Helvetica,Arial,sans-serif;margin:0;background-color:#0e1111;color:#ece7df}#navbar{display:flex;overflow:hidden;justify-content:right;border-bottom:1.5px solid #444444}#navbar a{display:inline-block;color:#ece7df;text-decoration:none;padding:14px 16px;font-size:17px}#navbar a:hover{background-color:#262626}#main{padding:1em}a{color:#ece7df}
