@@ -28,12 +28,6 @@ const Initial: FC<property> = (props) => {
     },
     [setMainState],
   );
-  const handleGalleryClick: MouseEventHandler<HTMLButtonElement> = useCallback(
-    () => {
-      setMainState('gallery');
-    },
-    [setMainState],
-  );
   return (
     <>
       <input
@@ -45,9 +39,6 @@ const Initial: FC<property> = (props) => {
       />
       <button type={'button'} onClick={handleSearchClick}>
         Search
-      </button>
-      <button type={'button'} onClick={handleGalleryClick}>
-        Gallery
       </button>
     </>
   );

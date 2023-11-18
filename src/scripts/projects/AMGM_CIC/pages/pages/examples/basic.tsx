@@ -22,7 +22,7 @@ const Post: NextPage = () => {
           <Scene />
           <div
             style={{
-              display: 'flex',
+              display: 'flex',justifyContent: 'space-between'
             }}
           >
             <div>

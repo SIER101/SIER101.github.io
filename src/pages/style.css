@@ -1,0 +1,11 @@
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0px;
+  background-color: #0e1111;
+  color: #ece7df;
+}
+
+#main {
+  padding: 2em;
+  padding-bottom: 6em;
+}

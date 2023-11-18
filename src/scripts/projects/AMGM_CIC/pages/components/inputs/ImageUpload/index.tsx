@@ -13,14 +13,12 @@ interface optionsContext {
 
 const Initial = dynamic(() => import('./initial'));
 const Search = dynamic(() => import('./search'));
-const Gallery = dynamic(() => import('./gallery'));
-const Preview = dynamic(() => import('./preview'));
 
 export const OptionsContext = createContext<optionsContext | null>(null);
 
 const ImageUploadCard: FC<property> = (props) => {
   const [mainState, setMainState] = useState<state>('initial');
-  const [selectedFile, setSelectedFile] = useState<string>(props.defaultValue as string);
+  const [_selectedFile, setSelectedFile] = useState<string>(props.defaultValue as string);
   const checkImage = useCallback(async (url: string) => {
       try {
         const res = await fetch(url);
@@ -53,15 +51,12 @@ const ImageUploadCard: FC<property> = (props) => {
               return <Initial changed={upload} placeholder={props.placeholder} />;
             case 'search':
               return <Search changed={upload} />;
-            case 'gallery':
-              return <Gallery changed={upload} imageGallery={props.imageGallery} />;
             default:
               setMainState('initial');
               return <></>;
           }
         })()}
       </OptionsContext.Provider>
-      {selectedFile ? <Preview alt="" src={selectedFile} /> : <></>}
     </div>
   );
 };
