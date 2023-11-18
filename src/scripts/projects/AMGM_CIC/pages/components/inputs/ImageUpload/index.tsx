@@ -61,7 +61,7 @@ const ImageUploadCard: FC<property> = (props) => {
           }
         })()}
       </OptionsContext.Provider>
-      {selectedFile ? <Preview src={selectedFile} /> : <></>}
+      {selectedFile ? <Preview alt="" src={selectedFile} /> : <></>}
     </div>
   );
 };

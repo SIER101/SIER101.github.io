@@ -5,7 +5,7 @@ import TeX from '@matejmazur/react-katex';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-const Post: NextPage = (props) => {
+const Post: NextPage = () => {
   return (
     <>
       <Head>

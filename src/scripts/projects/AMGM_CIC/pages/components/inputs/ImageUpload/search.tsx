@@ -8,7 +8,7 @@ interface property {
 const Search: FC<property> = (props) => {
   const { setMainState } = useContext(OptionsContext)!;
   const handleSeachClose: MouseEventHandler<HTMLButtonElement> = useCallback(
-    (event) => {
+    () => {
       setMainState('initial');
     },
     [setMainState],
@@ -18,7 +18,7 @@ const Search: FC<property> = (props) => {
     <>
       <label>Image URL</label>
       <input type={'url'} ref={input} />
-      <button type={'button'} onClick={(event) => props.changed?.(input.current!.value)}>
+      <button type={'button'} onClick={() => props.changed?.(input.current!.value)}>
         Search
       </button>
       <button type={'submit'} onClick={handleSeachClose}>

@@ -1,4 +1,4 @@
-import NavBar from '@/components/navbar';
+import NavBar from '../components/navbar';
 import '@/styles/globals.css';
 import 'katex/dist/katex.min.css';
 import type { AppProps } from 'next/app';

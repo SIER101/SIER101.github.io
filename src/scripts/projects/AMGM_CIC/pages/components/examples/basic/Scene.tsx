@@ -4,11 +4,11 @@ import { Html, OrbitControls, PerspectiveCamera, Stats, useProgress } from '@rea
 import { Canvas, useLoader, useThree } from '@react-three/fiber';
 import { FC, Suspense, useContext, useMemo } from 'react';
 import { BackSide, Color, DoubleSide, Euler, FrontSide, TextureLoader, Vector3 } from 'three';
-import { ParametricGeometry } from 'three/examples/jsm/geometries/ParametricGeometry';
+import { ParametricGeometry } from 'three/examples/jsm/geometries/ParametricGeometry.js';
 import type { optionsInterface } from './Options';
 import { OptionsContext } from './Options';
 
-const Loading: FC = (prop) => {
+const Loading: FC = () => {
   const { progress } = useProgress();
   return <Html center>{progress} % loaded</Html>;
 };
@@ -113,7 +113,7 @@ const Scene_: FC<optionsInterface> = (props) => {
   );
 };
 
-const Scene: FC = (prop) => {
+const Scene: FC = () => {
   const options = useContext(OptionsContext)! as optionsInterface;
   return (
     <Canvas frameloop={'demand'}

@@ -20,7 +20,7 @@ const navLinks = [
   },
 ];
 
-const Scene: FC = (prop) => {
+const Scene: FC = () => {
   return (
     <>
       <nav

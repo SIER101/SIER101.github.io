@@ -7,7 +7,7 @@ import { default as klein } from './klein';
 import { default as orthographic } from './orthographic';
 import { default as poincare } from './poincare';
 import { default as stereographic } from './stereographic';
-import type { Manifold, Point } from '@30ma19-02/noneuclid/build/main/lib';
+import type { Manifold, Point } from '../../../../../noneuclid/src/lib/index';
 import type { Vector3 } from 'three';
 
 export const enum projectionType {

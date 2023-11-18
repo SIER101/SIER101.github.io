@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const framework_list = ['next'];
 
-const Post: NextPage = (props) => {
+const Post: NextPage = () => {
   return (
     <>
       <Head>

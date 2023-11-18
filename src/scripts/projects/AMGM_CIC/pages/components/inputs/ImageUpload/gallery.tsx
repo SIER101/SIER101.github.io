@@ -10,7 +10,7 @@ interface property {
 const Gallery: FC<property> = (props) => {
   const { setMainState } = useContext(OptionsContext)!;
   const handleGalleryClose: MouseEventHandler<HTMLButtonElement> = useCallback(
-    (event) => {
+    () => {
       setMainState('initial');
     },
     [setMainState],
@@ -23,7 +23,7 @@ const Gallery: FC<property> = (props) => {
           {(props.imageGallery ?? []).map((url, ind) => (
             <div
               key={ind}
-              onClick={(event) => props.changed?.(url)}
+              onClick={() => props.changed?.(url)}
               style={{
                 aspectRatio: '2 / 1',
               }}
@@ -34,8 +34,8 @@ const Gallery: FC<property> = (props) => {
                 style={{
                   objectFit: 'cover',
                 }}
-                width={'100%'}
-                height={'100%'}
+                width={1}
+                height={1}
               />
             </div>
           ))}

@@ -1,12 +1,12 @@
 import Checkbox from '../../inputs/Checkbox';
 import ImageUpload from '../../inputs/ImageUpload';
 import Slider from '../../inputs/Slider';
-import { projectionType } from '@/scripts/examples/basic/projection';
+import { projectionType } from '../../../scripts/examples/basic/projection';
 import type { FC } from 'react';
 import { useCallback, useContext } from 'react';
 import { OptionsContext, textureGallery } from './Options';
 
-const AppInput: FC = (prop) => {
+const AppInput: FC = () => {
   const {
     segment: [width, height],
     setSegment,
@@ -20,7 +20,6 @@ const AppInput: FC = (prop) => {
     setVis,
     textureURL,
     setTextureURL,
-    proj,
     setProj,
   } = useContext(OptionsContext)!;
   const setWidth = useCallback((width: number) => setSegment(([_, height]) => [width, height]), [setSegment]),

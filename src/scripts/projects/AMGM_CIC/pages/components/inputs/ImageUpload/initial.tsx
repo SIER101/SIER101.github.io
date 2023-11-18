@@ -15,7 +15,7 @@ const Initial: FC<property> = (props) => {
         const reader = new FileReader();
         reader.readAsDataURL(file);
 
-        reader.onloadend = function (event: ProgressEvent<FileReader>) {
+        reader.onloadend = function () {
           props.changed?.(reader.result as string);
         }.bind(this);
       }
@@ -23,13 +23,13 @@ const Initial: FC<property> = (props) => {
     [props],
   );
   const handleSearchClick: MouseEventHandler<HTMLButtonElement> = useCallback(
-    (event) => {
+    () => {
       setMainState('search');
     },
     [setMainState],
   );
   const handleGalleryClick: MouseEventHandler<HTMLButtonElement> = useCallback(
-    (event) => {
+    () => {
       setMainState('gallery');
     },
     [setMainState],

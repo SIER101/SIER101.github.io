@@ -24,8 +24,8 @@ const Preview: React.FC<Property> = (props = {
           style={{
             objectFit: 'cover',
           }}
-          width={'100%'}
-          height={'100%'}
+          width={1}
+          height={1}
         />
       </div>
     </>
