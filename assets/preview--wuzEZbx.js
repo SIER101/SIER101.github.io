@@ -1,1 +1,0 @@
-import{j as t}from"./index-CRqs2CAs.js";import{I as r}from"./image-vtIv17hL.js";const s=(e={alt:"Selected Image",src:"",ratio:2/1})=>t.jsx(t.Fragment,{children:t.jsx("div",{style:{aspectRatio:"2 / 1"},children:t.jsx(r,{...e,alt:e.alt,style:{objectFit:"cover"},width:1,height:1})})});export{s as default};
