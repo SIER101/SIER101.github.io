@@ -9,14 +9,30 @@ function CEDT_FP() {
   return (
     <div>
       <h1>CEDT Web Project</h1>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "100%",
+        }}
+      >
         <img
           src={"." + bugBuzzleHome}
-          style={{ height: "400px", objectFit: "contain" }}
+          style={{
+            maxWidth: "45%",
+            height: "auto",
+            maxHeight: "400px",
+            objectFit: "contain",
+          }}
         ></img>
         <img
           src={"." + gameplay}
-          style={{ height: "400px", objectFit: "contain" }}
+          style={{
+            maxWidth: "45%",
+            height: "auto",
+            maxHeight: "400px",
+            objectFit: "contain",
+          }}
         ></img>
       </div>
       <h2>Description</h2>
@@ -27,20 +43,40 @@ function CEDT_FP() {
         website.<br></br>
       </p>
       <h2>Our Work</h2>
-      <div style={{ display: "flex", justifyContent: "space-around" }}>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "100%",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "45%",
+            justifyContent: "center",
+          }}
+        >
           <img
             src={"." + massiveLogicGate}
-            style={{ height: "300px", objectFit: "contain" }}
+            style={{ maxHeight: "300px", objectFit: "contain" }}
           ></img>
           <p style={{ textAlign: "center" }}>
             (I got mental trauma just from seeing this image)
           </p>
         </div>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "45%",
+            justifyContent: "center",
+          }}
+        >
           <img
             src={"." + figma}
-            style={{ height: "300px", objectFit: "contain" }}
+            style={{ maxHeight: "300px", objectFit: "contain" }}
           ></img>
           <p style={{ textAlign: "center" }}>
             We use Figma to design our pages
@@ -59,20 +95,40 @@ function CEDT_FP() {
         and have a live website there (no server btw as well as the scoreboard
         since Github Page only allowed static site T_T)<br></br>
         <br></br>
-        <div style={{ display: "flex", justifyContent: "space-around" }}>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            width: "100%",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              maxWidth: "45%",
+              justifyContent: "center",
+            }}
+          >
             <img
               src={"." + mobileVersion}
-              style={{ height: "300px", objectFit: "contain" }}
+              style={{ maxHeight: "300px", objectFit: "contain" }}
             ></img>
             <p style={{ textAlign: "center" }}>
               We also design for the mobile version;
             </p>
           </div>
-          <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              maxWidth: "45%",
+              justifyContent: "center",
+            }}
+          >
             <img
               src={"." + scoreboard}
-              style={{ height: "300px", objectFit: "contain" }}
+              style={{ maxHeight: "300px", objectFit: "contain" }}
             ></img>
             <p style={{ textAlign: "center" }}>The old Scoreboard (RIP)</p>
           </div>
