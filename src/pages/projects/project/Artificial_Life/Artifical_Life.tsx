@@ -1,4 +1,4 @@
-import ArtificialCanvas from "../../../../scripts/projects/Artificial_Life/ArtificialCanvas";
+//import ArtificialCanvas from "../../../../scripts/projects/Artificial_Life/ArtificialCanvas";
 
 function Artificial_Life() {
   return (

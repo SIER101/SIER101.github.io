@@ -11,47 +11,12 @@ function PS_OCR() {
   return (
     <div>
       <h1>Parcel Sorting OCR</h1>
-      <div
-        id="row1"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + idea}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
+      <div id="row1" className="row e2">
+        <div>
+          <img src={"." + idea}></img>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + present}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
+        <div>
+          <img src={"." + present}></img>
         </div>
       </div>
       <h2>Description</h2>
@@ -85,101 +50,25 @@ function PS_OCR() {
         <li>Send notification email to the parcel owner</li>
       </ol>
       <br></br>
-      <div
-        id="row2"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + parcel1}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
-          <p style={{ textAlign: "center" }}>
-            Example photo of parcel info taken by OV7670
-          </p>
+      <div id="row2" className="row e2">
+        <div>
+          <img src={"." + parcel1}></img>
+          <p>Example photo of parcel info taken by OV7670</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + parcelNotification}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
-          <p style={{ textAlign: "center" }}>
-            The receiver of the parcel will be notified by email
-          </p>
+        <div>
+          <img src={"." + parcelNotification}></img>
+          <p>The receiver of the parcel will be notified by email</p>
         </div>
       </div>
       <br></br>
-      <div
-        id="row3"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + demonstration1}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
-          <p style={{ textAlign: "center" }}>
-            Text extracted from parcel photo
-          </p>
+      <div id="row3" className="row e2">
+        <div>
+          <img src={"." + demonstration1}></img>
+          <p>Text extracted from parcel photo</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + demonstration2}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
-          <p style={{ textAlign: "center" }}>
+        <div>
+          <img src={"." + demonstration2}></img>
+          <p>
             <br></br>
           </p>
         </div>
@@ -190,84 +79,33 @@ function PS_OCR() {
         we've recieved The Best Design Award for our work.
       </p>
       <br></br>
-      <div
-        id="row4"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          width: "100%",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + groupPicture}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
-          <p style={{ textAlign: "center" }}>
-            This is me and my friends at the booth
-          </p>
+      <div id="row4" className="row e2">
+        <div>
+          <img src={"." + groupPicture}></img>
+          <p>This is me and my friends at the booth</p>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <img
-            src={"." + awarded}
-            style={{
-              height: "400px",
-              maxHeight: "400px",
-              objectFit: "contain",
-            }}
-          ></img>
-          <p style={{ textAlign: "center" }}>
-            Here is our group receiving The Best Design Award
-          </p>
+        <div>
+          <img src={"." + awarded}></img>
+          <p>Here is our group receiving The Best Design Award</p>
         </div>
       </div>
       <br></br>
-      <div
-        id="row5"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            maxWidth: "45%",
-            justifyContent: "center",
-          }}
-        >
-          <h3 style={{ textAlign: "center" }}>Presentation Video</h3>
+      <div id="row5" className="row e1">
+        <div>
+          <h3>Presentation Video</h3>
           <iframe
             width="700"
-            height="400"
             src="https://www.youtube.com/embed/8OvxkKQ0oQE?si=-2oLXYH1cm1wgrYK"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
-            style={{ border: 0 }}
+            style={{ border: 0, maxWidth: "100%",alignSelf: "center",aspectRatio: "16/9" }}
           ></iframe>
         </div>
       </div>
-      <br></br>Repository:{" "}
+      <br></br>
+      <br></br>
+      Repository:{" "}
       <a href="https://github.com/KanDokTaThai-New/STEM-Challenge-2022">
         https://github.com/KanDokTaThai-New/STEM-Challenge-2022
       </a>
