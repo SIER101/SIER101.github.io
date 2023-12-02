@@ -1,4 +1,5 @@
 import Post from "../../../../scripts/projects/AMGM_CIC/pages/pages/examples/basic";
+import "./style.css";
 
 function AMGM_CIC() {
   return (
@@ -16,9 +17,9 @@ function AMGM_CIC() {
         Which is like a final project that me and my friend, Hanchai Nonprasart
         have done over the course of studying at Mahidol Wittayanusorn School.
         <br></br>
-        It was originally planned as a simple computer project. But
-        somehow it became a full-on mathematical problem (I don't even know how but it
-        is what it is).
+        It was originally planned as a simple computer project. But somehow it
+        became a full-on mathematical problem (I don't even know how but it is
+        what it is).
         <br></br>
         <br></br>
         Original Repository:{" "}

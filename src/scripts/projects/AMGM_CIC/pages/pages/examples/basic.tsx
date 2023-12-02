@@ -20,7 +20,7 @@ const Post: NextPage = () => {
       >
         <OptionsProvider>
           <Scene />
-          <div
+          <div id='info'
             style={{
               display: 'flex',justifyContent: 'space-between'
             }}

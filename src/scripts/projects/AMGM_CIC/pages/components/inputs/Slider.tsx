@@ -39,7 +39,7 @@ const InputSlider: FC<property> = (prop) => {
         }}
       >
         <input type={'range'} value={value} onChange={onChange} step={prop.step || 1e-18} {...prop_} />
-        <input type={'number'} value={value} onChange={onChange} step={prop.step || 1e-18} {...prop_} />
+        <input type={'number'} value={value} onChange={onChange} step={prop.step || 1e-18} {...prop_} style={{width:"120px"}} />
       </div>
     </>
   );
