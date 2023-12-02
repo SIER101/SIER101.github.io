@@ -86,62 +86,65 @@ function CEDT_FP() {
       <p>
         With our brilliance ideas combined, we come up with a kahoot-like kind
         of game with a parody theme of our previous course... Digital Computer
-        Logic<br></br>
-        <br></br>Our web server was initially designed to run on Amazon EC2 with
-        two ports, front and back (since it is an assignment condition).
+        Logic
+        <br></br>
+        <br></br>
+        Our web server was initially designed to run on Amazon EC2 with two
+        ports, front and back (since it is an assignment condition).
         <br></br>
         But now that we don't have access to EC2 anymore since the assignment is
-        over, we migrate the project to our group Github Page<br></br>
-        and have a live website there (no server btw as well as the scoreboard
-        since Github Page only allowed static site T_T)<br></br>
+        over, we migrate the project to our group Github Page
         <br></br>
+        and have a live website there (no server btw as well as the scoreboard
+        since Github Page only allowed static site T_T)
+        <br></br>
+      </p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+          width: "100%",
+        }}
+      >
         <div
           style={{
             display: "flex",
-            justifyContent: "space-around",
-            width: "100%",
+            flexDirection: "column",
+            maxWidth: "45%",
+            justifyContent: "center",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              maxWidth: "45%",
-              justifyContent: "center",
-            }}
-          >
-            <img
-              src={"." + mobileVersion}
-              style={{ maxHeight: "300px", objectFit: "contain" }}
-            ></img>
-            <p style={{ textAlign: "center" }}>
-              We also design for the mobile version;
-            </p>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              maxWidth: "45%",
-              justifyContent: "center",
-            }}
-          >
-            <img
-              src={"." + scoreboard}
-              style={{ maxHeight: "300px", objectFit: "contain" }}
-            ></img>
-            <p style={{ textAlign: "center" }}>The old Scoreboard (RIP)</p>
-          </div>
+          <img
+            src={"." + mobileVersion}
+            style={{ maxHeight: "300px", objectFit: "contain" }}
+          ></img>
+          <p style={{ textAlign: "center" }}>
+            We also design for the mobile version;
+          </p>
         </div>
-        <br></br>Live Preview:{" "}
-        <a href="https://cedt-final-project-group.github.io/CEDT_Final_Project/">
-          https://cedt-final-project-group.github.io/CEDT_Final_Project/
-        </a>
-        <br></br>Original Repository:{" "}
-        <a href="https://github.com/CEDT-Final-Project-Group/CEDT_Final_Project">
-          https://github.com/CEDT-Final-Project-Group/CEDT_Final_Project
-        </a>
-      </p>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "45%",
+            justifyContent: "center",
+          }}
+        >
+          <img
+            src={"." + scoreboard}
+            style={{ maxHeight: "300px", objectFit: "contain" }}
+          ></img>
+          <p style={{ textAlign: "center" }}>The old Scoreboard (RIP)</p>
+        </div>
+      </div>
+      <br></br>Live Preview:{" "}
+      <a href="https://cedt-final-project-group.github.io/CEDT_Final_Project/">
+        https://cedt-final-project-group.github.io/CEDT_Final_Project/
+      </a>
+      <br></br>Repository:{" "}
+      <a href="https://github.com/CEDT-Final-Project-Group/CEDT_Final_Project">
+        https://github.com/CEDT-Final-Project-Group/CEDT_Final_Project
+      </a>
     </div>
   );
 }
