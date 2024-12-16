@@ -1,0 +1,9 @@
+.Collapsible > * > li::marker {
+    content: "[click] ";
+    padding-right: 5px;
+}
+
+.Collapsible > .is-open > li::marker {
+    content: "[hide] ";
+    padding-right: 5px;
+}

@@ -19,12 +19,12 @@ function Projects() {
       </ul>
       <h2>Personal Work</h2>
       <ul>
-        <li>
+        {/* <li>
           <a href="#/projects/Artificial_Life">Artificial Life V.1</a>
         </li>
         <li>
           <a href="#/projects/Simple_NNW">Simple Neural Network (WIP)</a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

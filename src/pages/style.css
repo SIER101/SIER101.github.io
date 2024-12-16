@@ -9,3 +9,39 @@ body {
   padding: 2em;
   padding-bottom: 6em;
 }
+
+a {
+  color: #ece7df;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.row > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.row > div > img {
+  max-height: 400px;
+}
+
+.row.e1 > div {
+  max-width: 95%;
+}
+
+.row.e2 > div {
+  max-width: 45%;
+}

@@ -1,22 +1,14 @@
-import awarded from "./images/awarded.jpg";
-import groupPicture from "./images/groupPicture.jpg";
-import demonstration1 from "./images/demonstration1.png";
-import demonstration2 from "./images/demonstration2.png";
-import parcel1 from "./images/parcel1.png";
-import idea from "./images/idea.jpg";
-import parcelNotification from "./images/parcelNotification.png";
-import present from "./images/presentation.jpg";
-
 function PS_OCR() {
+  const images = import.meta.glob('./images/*.{png,jpg,jpeg,PNG,JPEG}', {eager: true, query: '?url', import: 'default'})
   return (
     <div>
       <h1>Parcel Sorting OCR</h1>
       <div id="row1" className="row e2">
         <div>
-          <img src={"." + idea}></img>
+          <img src={"." + images['./images/idea.jpg']}></img>
         </div>
         <div>
-          <img src={"." + present}></img>
+          <img src={"." + images['./images/presentation.jpg']}></img>
         </div>
       </div>
       <h2>Description</h2>
@@ -52,22 +44,22 @@ function PS_OCR() {
       <br></br>
       <div id="row2" className="row e2">
         <div>
-          <img src={"." + parcel1}></img>
+          <img src={"." + images['./images/parcel1.png']}></img>
           <p>Example photo of parcel info taken by OV7670</p>
         </div>
         <div>
-          <img src={"." + parcelNotification}></img>
+          <img src={"." + images['./images/parcelNotification.png']}></img>
           <p>The receiver of the parcel will be notified by email</p>
         </div>
       </div>
       <br></br>
       <div id="row3" className="row e2">
         <div>
-          <img src={"." + demonstration1}></img>
+          <img src={"." + images['./images/demonstration1.png']}></img>
           <p>Text extracted from parcel photo</p>
         </div>
         <div>
-          <img src={"." + demonstration2}></img>
+          <img src={"." + images['./images/demonstration2.png']}></img>
           <p>
             <br></br>
           </p>
@@ -81,11 +73,11 @@ function PS_OCR() {
       <br></br>
       <div id="row4" className="row e2">
         <div>
-          <img src={"." + groupPicture}></img>
+          <img src={"." + images['./images/groupPicture.jpg']}></img>
           <p>This is me and my friends at the booth</p>
         </div>
         <div>
-          <img src={"." + awarded}></img>
+          <img src={"." + images['./images/awarded.jpg']}></img>
           <p>Here is our group receiving The Best Design Award</p>
         </div>
       </div>
