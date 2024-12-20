@@ -45,3 +45,13 @@ img {
 .row.e2 > div {
   max-width: 45%;
 }
+
+.Collapsible > .Collapsible__trigger > *::before {
+  content: "[click] ";
+  padding-right: 5px;
+}
+
+.Collapsible > .Collapsible__trigger.is-open > *::before {
+  content: "[hide] ";
+  padding-right: 5px;
+}

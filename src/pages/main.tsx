@@ -10,6 +10,8 @@ import Error404 from "./error404/error404";
 import AMGM_CIC from "./projects/project/AMGM_CIC/AMGM_CIC";
 import PS_OCR from "./projects/project/PS_OCR/PS_OCR";
 import CEDT_FP from "./projects/project/CEDT_FP/CEDT_FP";
+import HotelViz from "./projects/project/HotelViz/HotelViz";
+import CU_GCE from "./projects/project/CU_GCE/CU_GCE";
 import Simple_NNW from "./projects/project/Simple_NNW/Simple_NNW";
 import Artificial_Life from "./projects/project/Artificial_Life/Artifical_Life";
 
@@ -24,6 +26,8 @@ ReactDOM.createRoot(document.getElementById("main")!).render(
         <Route path="projects/AMGM_CIC" element={<AMGM_CIC />}></Route>
         <Route path="projects/PS_OCR" element={<PS_OCR />}></Route>
         <Route path="projects/CEDT_Final_Project" element={<CEDT_FP />}></Route>
+        <Route path="projects/HotelViz" element={<HotelViz />}></Route>
+        <Route path="projects/CU_GCE" element={<CU_GCE />}></Route>
         <Route path="projects/Simple_NNW" element={<Simple_NNW />}></Route>
         <Route
           path="projects/Artificial_Life"

@@ -1,4 +1,3 @@
-import "./style.css";
 import React from "react";
 import Collapsible from 'react-collapsible';
 
@@ -26,7 +25,7 @@ function Achievement() {
                             <br></br>
                             <div className="flex">
                                 <div style={{ maxWidth: "1000px"}}>
-                                    <img src={"." + images['./images/progMeth.png']}></img>
+                                    <img src={"." + images['./images/discrete.jpg']}></img>
                                 </div>
                             </div>
                         </Collapsible>
@@ -55,7 +54,7 @@ function Achievement() {
             <ul>
                 <li>
                     <p>IPST<br></br>
-                    Qualify in regional-level IPST Mathematics camp (2nd camp) at Sri Ayudhya School in 2017 and 2018. [Can't find Images]</p>
+                    Qualify in regional-level IPST Mathematics camp (2nd camp) at Sri Ayudhya School in 2017 and 2018.</p>
                     <div className="row e2">
                         <div>
                             <img src={"." + images['./images/ipst2019.jpg']}></img>

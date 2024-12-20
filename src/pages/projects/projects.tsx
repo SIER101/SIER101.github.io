@@ -5,7 +5,7 @@ function Projects() {
     <div>
       <h1>My projects</h1>
       <div>Here's all the projects that I've done</div>
-      <h2>School related Projects</h2>
+      <h2>Academic related Projects</h2>
       <ul>
         <li>
           <a href="#/projects/AMGM_CIC">AMGM-CIC</a>
@@ -16,16 +16,22 @@ function Projects() {
         <li>
           <a href="#/projects/CEDT_Final_Project">CEDT Web Project</a>
         </li>
+        <li>
+          <a href="#/projects/HotelViz">HotelViz: Hotel Booking</a>
+        </li>
+        <li>
+          <a href="#/projects/CU_GCE">Chulalongkorn University Global Collaboration Explorer</a>
+        </li>
       </ul>
-      <h2>Personal Work</h2>
+      {/* <h2>Personal Work</h2>
       <ul>
-        {/* <li>
+        <li>
           <a href="#/projects/Artificial_Life">Artificial Life V.1</a>
         </li>
         <li>
           <a href="#/projects/Simple_NNW">Simple Neural Network (WIP)</a>
-        </li> */}
-      </ul>
+        </li>
+      </ul> */}
     </div>
   );
 }
